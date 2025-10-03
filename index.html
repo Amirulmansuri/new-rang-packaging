@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rang Packaging</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Official Font Awesome 6 Free CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    
+<!-- Header  -->
+
+
+
+
+
+<header class="header">
+    <div class="container header-inner">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="#hero-section" aria-label="Rang Packaging home">
+                <img src="/Assets/logo.png" alt="Rang Packaging Logo">
+            </a>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav" id="navbar" aria-label="Primary navigation">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Pages/About_Us.html">About Us</a></li>
+
+                <!-- Dropdown for Our Products -->
+                <li class="has-dropdown">
+                    <a href="/Pages/Products.html">Our Products</a>
+                    <div class="dropdown">
+                        <div class="dropdown-col">
+                            <a href="/Pages/Products.html#category stretch-film">Stretch Film</a>
+                            <a href="/Pages/Products.html#category bubble-wrap">Bopp Tape</a>
+                            <a href="/Pages/Products.html#category bubble-wrap">Bubble Wrap</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="#contact-form">Contact Us</a></li>
+
+                <!-- Mobile CTA -->
+                <li class="mobile-btn">
+                    <a href="#contact-form" class="btn">Get an Inquiry</a>
+                </li>
+            </ul>
+
+            <!-- ✅ Mobile Contact Info -->
+            <div class="mobile-contact">
+                <!-- Call -->
+                <a href="tel:+919925853081" class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.05-.24c1.12.37 
+                               2.33.57 3.54.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 
+                               3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.21.2 2.42.57 3.54a1 1 
+                               0 01-.24 1.05l-2.2 2.2z" />
+                    </svg>
+                    +91 99258 53081
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:rangpackaging24@gmail.com" class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18a2 2 0 002 
+                               2h16a2 2 0 002-2V6c0-1.1-.9-2-2-2zm0 
+                               4l-8 5-8-5V6l8 5 8-5v2z" />
+                    </svg>
+                    rangpackaging24@gmail.com
+                </a>
+
+                <!-- Address -->
+                <a href="https://goo.gl/maps/M2fakhSeN1GLnLMm9" target="_blank" class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 2C8.14 2 5 5.14 5 9c0 
+                               5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 
+                               9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
+                    </svg>
+                    Plot No 216, Por Raman Gamdi GIDC, Near Por, Vadodara-391243, Gujarat, India
+                </a>
+            </div>
+        </nav>
+
+
+        <!-- Desktop CTA (hidden on mobile) -->
+        <div class="cta desktop-only">
+            <a href="#contact-form" class="btn">Get an Inquiry</a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+</header>
+  
+
+
+
+
+
+    <!-- Hero Section -->
+
+
+
+
+
+
+
+<!-- HERO SECTION (standalone) -->
+<section id="hero-section" class="hero-section" aria-label="Hero: Rang Packaging">
+    <div class="hero-media" aria-hidden="true">
+        <!-- Video: include a poster image for fallback and accessibility -->
+        <video class="background-video" autoplay muted loop playsinline poster="logo10.png" preload="metadata"
+            role="img">
+            <source src="HeroE.mp4" type="video/mp4" />
+            <!-- If video not supported, the img below will be visible -->
+        </video>
+
+        <!-- Fallback image (also used while video loads or on devices that block autoplay) -->
+        <img class="background-fallback" src="logo10.png" alt="Rang Packaging - factory background" />
+
+        <!-- subtle overlay to improve text contrast -->
+        <div class="video-overlay"></div>
+    </div>
+
+    <div class="hero-content container">
+        <h1 class="hero-title">Your Partner in <span class="hero-text">Quality</span> Packaging</h1>
+        <p class="hero-subtitle">Delivering customized packaging solutions that meet your needs.</p>
+
+        <div class="hero-actions">
+            <button class="cta-button" id="know-more" type="button">Know More</button>
+           
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- Prodcut's carasoul -->
+
+
+
+
+
+
+<!-- WHAT WE DO / SERVICES CAROUSEL -->
+<section id="what-we-do" class="what-we-do-section" aria-label="What we do">
+    <div class="container">
+        <h2 class="wwd-title">What We Do</h2>
+        <h3 class="wwd-subtitle">Our Product's</h3>
+        <div class="underline"></div>
+
+        <div class="carousel" id="servicesCarousel">
+            <button class="carousel-control prev" aria-label="Previous slide">‹</button>
+
+            <div class="carousel-track" role="list">
+                <!-- Slide 1 -->
+                <article class="carousel-slide" role="listitem" data-index="0" aria-roledescription="slide"
+                    aria-label="Stretch Film">
+                    <img class="slide-bg" src="/Assets/Stretch FIlm Carausals.png" alt="" aria-hidden="true">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h4 class="slide-title">Stretch Film</h4>
+                        <p class="slide-desc">High-quality stretch films for secure pallet wrapping and superior load
+                            stability.</p>
+                        <a class="slide-cta" href="/Pages/Products.html#category stretch-film">View More ›</a>
+                    </div>
+                </article>
+
+                <!-- Slide 2 -->
+                <article class="carousel-slide" role="listitem" data-index="1" aria-roledescription="slide"
+                    aria-label="Bubble Wrap">
+                    <img class="slide-bg" src="/Assets/Bubble wrape carausals.png" alt="" aria-hidden="true">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h4 class="slide-title">Bubble Wrap</h4>
+                        <p class="slide-desc">Protective bubble wraps in multiple sizes and thicknesses for fragile
+                            goods.</p>
+                        <a class="slide-cta" href="/Pages/Products.html#category bubble-wrap">View More ›</a>
+                    </div>
+                </article>
+
+                <!-- Slide 3 -->
+                <article class="carousel-slide" role="listitem" data-index="2" aria-roledescription="slide"
+                    aria-label="BOPP Tape">
+                    <img class="slide-bg" src="/Assets/Bopp Tape Craousals.png" alt="" aria-hidden="true">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h4 class="slide-title">BOPP Tape</h4>
+                        <p class="slide-desc">Durable BOPP adhesive tapes for secure sealing and tamper-evident
+                            packaging.</p>
+                        <a class="slide-cta" href="/Pages/Products.html#category bubble-wrap">View More ›</a>
+                    </div>
+                </article>
+            </div>
+
+            <button class="carousel-control next" aria-label="Next slide">›</button>
+
+            <div class="carousel-dots" role="tablist" aria-label="Slide navigation"></div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Bussiness Categories  -->
+
+
+
+<!-- Business Categories Section -->
+<section id="business-section">
+    <h2 class="business-title">Our Business Models</h2>
+    <div class="business-grid">
+
+        <!-- B2B -->
+        <div class="business-card">
+            <div class="business-icon">
+                <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h3 class="business-heading">B2B (Business-to-Business)</h3>
+            
+            <p class="business-text">
+                We partner with traders, distributors, and suppliers to establish long-term networks,
+                enabling bulk transactions and sustainable growth.
+            </p>
+            <a href="#contact-form" class="business-btn">Contact Us</a>
+        </div>
+
+        <!-- B2C -->
+        <div class="business-card">
+            <!-- <div class="business-icon">
+                <i class="fa-solid fa-building"></i>
+            </div> -->
+            <!-- B2C -->
+            <div class="business-icon">🏢</div>
+            <h3 class="business-heading">B2C (Business-to-Corporate)</h3>
+            <p class="business-text">
+                We directly collaborate with corporates, offering tailored solutions, enterprise-level deals,
+                and customized services for their unique requirements.
+            </p>
+            <a href="#contact-form" class="business-btn">Contact Us</a>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Map Section -->
+
+
+
+
+
+
+
+
+
+<!-- India Map Section -->
+<section id="india-map-section">
+    <h2 class="map-title">Our <span class="hero-text">India</span> Reach</h2>
+    <!-- <div class="underline"></div> -->
+
+    <div class="map-container">
+        <!-- Video Background -->
+        <video autoplay muted loop playsinline class="map-video">
+            <source src="assets/indianMap.mp4" type="video/mp4">
+            Your browser does not support the content
+        </video>
+
+        <!-- Marker Example -->
+        <!-- <div class="map-marker marker-delhi">Delhi</div> -->
+        <!-- <div class="map-marker marker-mumbai">Mumbai</div> -->
+        <!-- <div class="map-marker marker-bangalore">Bangalore</div> -->
+    </div>
+</section>
+
+
+
+
+
+
+
+    <!-- Contact us -->
+    
+    
+    
+    
+    
+    
+    <!-- Contact us Section -->
+    
+    <section class="contact-section" id="contact-form">
+        <div class="contact-container">
+    
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Let's Contact us!</p>
+    
+                <div class="info-item">
+                    <!-- Call -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M6.62 10.79a15.91 15.91 0 006.59 6.59l2.2-2.2a1 1 0 011.05-.24 12.36 12.36 0 003.88.62 1 1 0 011 1v3.61a1 1 0 01-.91 1 19.87 19.87 0 01-8.69-2.48 19.43 19.43 0 01-6-6A19.87 19.87 0 014 5.91 1 1 0 015 5h3.61a1 1 0 011 1 12.36 12.36 0 00.62 3.88 1 1 0 01-.24 1.05l-2.37 2.37z" />
+                    </svg>
+                    <a href="tel:+919925853081">+91 99258 53081</a>
+                </div>
+    
+                <div class="info-item">
+                    <!-- Email -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                    </svg>
+                    <a href="mailto:rangpackaging24@gmail.com">rangpackaging24@gmail.com</a>
+                </div>
+    
+                <div class="info-item">
+                    <!-- Address -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5a2.5 2.5 0 112.5-2.5 2.5 2.5 0 01-2.5 2.5z" />
+                    </svg>
+                    <a href="https://goo.gl/maps/M2fakhSeN1GLnLMm9" target="_blank">Plot No 216, Por Raman Gamdi GIDC, Por,
+                        Vadodara, Gujarat, India</a>
+                </div>
+    
+    
+                <!-- Social Media -->
+                <div class="social-icons">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/rang_packaging/#" class="instagram" title="Instagram"
+                        target="_blank">
+                        <img src="/Assets/SVG/instagram.svg" alt="Instagram">
+                    </a>
+    
+                    <!-- Twitter -->
+                    <!-- <a href="#" class="twitter" title="Twitter" target="_blank">
+                        <img src="/Assets/SVG/" alt="Twitter">
+                    </a>
+                 -->
+                    <!-- LinkedIn -->
+                    <a href="#" class="linkedin" title="LinkedIn" target="_blank">
+                        <img src="/Assets/SVG/linkdin.svg" alt="LinkedIn">
+                    </a>
+    
+                    <!-- Facebook -->
+                    <a href="#" class="facebook" title="Facebook" target="_blank">
+                        <img src="/Assets/SVG/facebook.svg" alt="Facebook">
+                    </a>
+    
+    
+    
+    
+                    <!-- IndiaMart -->
+                    <a href="https://www.indiamart.com/rangpackaging-vadodara/profile.html" class="indiamart"
+                        title="IndiaMart" target="_blank">
+                        <img src="https://www.indiamart.com/favicon.ico" alt="IndiaMart">
+                    </a>
+                </div>
+    
+            </div>
+    
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                    <!-- Correct Web3Forms access key -->
+                    <input type="hidden" name="access_key" value="6a15e67e-1782-43e2-b2b0-6b6e1ddcd028">
+    
+                    <!-- Optional: Redirect URL after success -->
+                    <!-- <input type="hidden" name="redirect" value="https://yourwebsite.com/thank-you.html"> -->
+    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName"><span class="required">*</span>First name </label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last name</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+                        </div>
+                    </div>
+    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email </label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone"><span class="required">*</span>Phone number </label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="message">Message </label>
+                        <textarea id="message" name="message" placeholder="Write your message..." rows="4"></textarea>
+                    </div>
+    
+                    <!-- Spam protection (recommended by Web3Forms) -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+    
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    <!-- Footer -->
+    
+    
+    
+    
+    
+    <footer class="site-footer" aria-labelledby="footer-heading">
+        <div class="footer-inner container">
+            <!-- Column 1: Logo + description -->
+            <div class="footer-col footer-about">
+                <img src="/Assets/logo.png" alt="Rang Packaging" class="footer-logo">
+                <p class="footer-desc">
+                    Rang Packaging is your trusted partner for packaging solutions, offering seamless
+                    Stretch Film, Bubble Wrap and Bopp Tape services across local and all Indian markets.
+                </p>
+                <p class="footer-desc small">Delivering customized packaging solutions that meet your needs.</p>
+            </div>
+    
+            <!-- Column 2: Navigation -->
+            <div class="footer-col footer-nav">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/Pages/About_Us.html">About us</a></li>
+                    <li><a href="/Pages/Products.html">Our Products</a></li>
+                    <li><a href="#contact-form">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Column 3: Get in Touch -->
+            <div class="footer-col footer-contact">
+                <h4>Get in Touch</h4>
+    
+                <ul class="contact-list" aria-label="Contact details">
+    
+    
+                    <li>
+                        <span class="ico-circle" aria-hidden="true">
+                            <!-- phone SVG -->
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path
+                                    d="M6.62 10.79a15.91 15.91 0 006.59 6.59l2.2-2.2a1 1 0 011.05-.24 12.36 12.36 0 003.88.62 1 1 0 011 1v3.61a1 1 0 01-.91 1 19.87 19.87 0 01-8.69-2.48 19.43 19.43 0 01-6-6A19.87 19.87 0 014 5.91 1 1 0 015 5h3.61a1 1 0 011 1 12.36 12.36 0 00.62 3.88 1 1 0 01-.24 1.05l-2.37 2.37z" />
+                            </svg>
+                        </span>
+                        <a href="tel:+919925853081">+91 99258 53081</a>
+                    </li>
+    
+                    <li>
+                        <span class="ico-circle" aria-hidden="true">
+                            <!-- mail SVG -->
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M3 7.8v8.7A2.5 2.5 0 005.5 19h13A2.5 2.5 0 0021 16.5V7.8" />
+                                <path d="M21 7.8l-9 6-9-6" />
+                            </svg>
+                        </span>
+                        <a href="mailto:rangpackaging24@gmail.com">rangpackaging24@gmail.com</a>
+                    </li>
+    
+    
+                    <li>
+                        <span class="ico-circle" aria-hidden="true">
+                            <!-- location SVG -->
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path
+                                    d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5a2.5 2.5 0 112.5-2.5 2.5 2.5 0 01-2.5 2.5z" />
+                            </svg>
+                        </span>
+                        <!-- <span> Bhadohi</span> -->
+                        <a href="https://goo.gl/maps/M2fakhSeN1GLnLMm9">Plot No 216, Por Raman Gamdi, Por,Vadodara, Gujarat,
+                            India</a>
+                    </li>
+    
+    
+                </ul>
+            </div>
+    
+            <!-- Column 4: Social icons -->
+            <div class="footer-col footer-social">
+                <h4>Social Network</h4>
+    
+                <div class="social-row" aria-label="Social network links">
+                    <a href="https://www.instagram.com/rang_packaging/#" class="social-icon instagram"
+                        aria-label="Instagram" target="_blank" rel="noopener">
+                        <img src="/Assets/SVG/instagram.svg" alt="Instagram">
+                    </a>
+    
+                    <!-- <a href="#" class="social-icon x" aria-label="X / Twitter" target="_blank" rel="noopener">
+                        <img src="/Assets/SVG/x.svg" alt="X / Twitter">
+                    </a> -->
+    
+                    <a href="#" class="social-icon linkedin" aria-label="LinkedIn" target="_blank" rel="noopener">
+                        <img src="/Assets/SVG/linkdin.svg" alt="LinkedIn">
+                    </a>
+    
+                    <a href="#" class="social-icon facebook" aria-label="Facebook" target="_blank" rel="noopener">
+                        <img src="/Assets/SVG/facebook.svg" alt="Facebook">
+                    </a>
+    
+                    <a href="https://www.indiamart.com/rangpackaging-vadodara/profile.html" class="social-icon indiamart"
+                        aria-label="IndiaMart" target="_blank" rel="noopener">
+                        <img src="https://www.indiamart.com/favicon.ico" alt="IndiaMart">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- separate ownership bar (different color) -->
+    <div class="ownership">
+        <div class="ownership-inner container">
+            <p class="copyright">Copyright © <span id="year"></span>. Rang Packaging. All Right Reserved Design,Developed
+                and Maintained by ADHM Tech Solution Contact number: 6353863048</p>
+        </div>
+    </div>
+    
+    <!-- set current year -->
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
